@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" data-i18n="meta.description" content="hafiy_dev develops mods, plugins, and software that make Minecraft experiences better.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hafiy.pages.dev/">
+  <title data-i18n="meta.title">hafiy_dev: Independent Minecraft Development</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="hafiy_dev: Independent Minecraft Development">
+  <meta property="og:description" content="hafiy_dev develops mods, plugins, and software that make Minecraft experiences better.">
+  <meta property="og:url" content="https://hafiy.pages.dev/">
+
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <a class="brand" href="#top">
+        <span class="brand__mark ltr" dir="ltr">hafiy_dev</span>
+        <span class="brand__caret" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="/" aria-current="page" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="/projects/" data-i18n="nav.projects">Projects</a>
+        <a class="nav__link" href="/about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="/changelog/" data-i18n="nav.changelog">Changelog</a>
+      </nav>
+
+      <div class="header__end">
+        <a class="header__github" href="#" data-link="github" data-i18n="nav.github" hidden>GitHub</a>
+
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="nav.langLabel">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang="id" aria-pressed="false">ID</button>
+          <button type="button" class="lang__btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+
+        <p class="eyebrow" data-i18n="hero.eyebrow">INDEPENDENT MINECRAFT DEVELOPMENT</p>
+
+        <h1 class="hero__title" id="hero-title" data-i18n="hero.title">Building more than just plugins.</h1>
+
+        <p class="hero__desc" data-i18n="hero.desc">hafiy_dev develops mods, plugins, and software that make Minecraft experiences better.</p>
+
+        <p class="hero__actions">
+          <a class="btn btn--primary" href="#projects" data-i18n="hero.primary">Explore Projects</a>
+          <a class="btn btn--ghost" href="#" data-i18n="hero.secondary" data-link="github" hidden>View GitHub</a>
+        </p>
+
+        <ul class="stack">
+          <li class="stack__item" data-i18n="hero.meta.edition">Minecraft Java Edition</li>
+          <li class="stack__item ltr" dir="ltr" data-i18n="hero.meta.fabric">Fabric</li>
+          <li class="stack__item ltr" dir="ltr" data-i18n="hero.meta.spigot">Paper / Spigot</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+
+        <div class="section__head">
+          <h2 class="section__title" id="projects-title" data-i18n="projects.title">Selected Projects</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <span class="section__count" data-i18n="projects.count">4 projects</span>
+        </div>
+        <p class="section__lede" data-i18n="projects.lede">Four projects across the client and the server side.</p>
+
+        <div class="projects">
+
+          <article class="project" aria-labelledby="project-sentientmobs">
+            <div class="project__head">
+              <h3 class="project__name ltr" dir="ltr" id="project-sentientmobs">SentientMobs</h3>
+              <span class="project__tag" data-i18n="projects.kind.sm">Server plugin</span>
+            </div>
+            <div class="project__body">
+              <p class="project__desc" data-i18n="projects.desc.sm">Makes Minecraft mobs act smarter through more dynamic behaviour.</p>
+              <div class="project__meta">
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.platform">Platform</span><span class="project__val ltr" dir="ltr">Paper / Spigot</span></span>
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.version">Minecraft</span><span class="project__val ltr" dir="ltr">1.20+</span></span>
+                <a class="project__link" href="#" data-link="sentientmobs" data-i18n="projects.repo" hidden>Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="project-spillguard">
+            <div class="project__head">
+              <h3 class="project__name ltr" dir="ltr" id="project-spillguard">SpillGuard</h3>
+              <span class="project__tag" data-i18n="projects.kind.sg">Client mod</span>
+            </div>
+            <div class="project__body">
+              <p class="project__desc" data-i18n="projects.desc.sg">Visualises where water and lava will flow before the fluid is placed.</p>
+              <div class="project__meta">
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.platform">Platform</span><span class="project__val ltr" dir="ltr">Fabric</span></span>
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.version">Minecraft</span><span class="project__val ltr" dir="ltr">1.21.1</span></span>
+                <a class="project__link" href="#" data-link="spillguard" data-i18n="projects.repo" hidden>Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="project-dependencymanager">
+            <div class="project__head">
+              <h3 class="project__name ltr" dir="ltr" id="project-dependencymanager">DependencyManager</h3>
+              <span class="project__tag" data-i18n="projects.kind.dm">Diagnostics plugin</span>
+            </div>
+            <div class="project__body">
+              <p class="project__desc" data-i18n="projects.desc.dm">Scans installed plugins to trace dependencies, load order, conflicts, and cycles.</p>
+              <div class="project__meta">
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.platform">Platform</span><span class="project__val ltr" dir="ltr">Paper / Spigot</span></span>
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.version">Minecraft</span><span class="project__val ltr" dir="ltr">1.20.4</span></span>
+                <a class="project__link" href="#" data-link="dependencymanager" data-i18n="projects.repo" hidden>Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" aria-labelledby="project-timbr">
+            <div class="project__head">
+              <h3 class="project__name ltr" dir="ltr" id="project-timbr">Timbr</h3>
+              <span class="project__tag" data-i18n="projects.kind.timbr">Utility plugin</span>
+            </div>
+            <div class="project__body">
+              <p class="project__desc" data-i18n="projects.desc.timbr">Fells a whole tree in one break, respecting region protection.</p>
+              <div class="project__meta">
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.platform">Platform</span><span class="project__val ltr" dir="ltr">Paper / Spigot</span></span>
+                <span class="project__spec"><span class="project__key" data-i18n="projects.meta.version">Minecraft</span><span class="project__val ltr" dir="ltr">1.20.x</span></span>
+                <a class="project__link" href="#" data-link="timbr" data-i18n="projects.repo" hidden>Repository</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="section__lede section__lede--more">
+          <a class="section__more" href="/projects/" data-i18n="projects.all">All projects</a>
+        </p>
+
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+
+        <div class="section__head">
+          <h2 class="section__title" id="about-title" data-i18n="about.title">About</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="about">
+          <p class="about__body" data-i18n="about.body">hafiy_dev is an independent software brand focused on Minecraft and related technical work: mods, server plugins, and the utilities that keep them running.</p>
+
+          <dl class="principles">
+            <div class="principles__item">
+              <dt data-i18n="about.item1.label">Performance</dt>
+              <dd data-i18n="about.item1.text">Configurable update intervals and entity limits keep the load light.</dd>
+            </div>
+            <div class="principles__item">
+              <dt data-i18n="about.item2.label">Compatibility</dt>
+              <dd data-i18n="about.item2.text">Runs across servers and launchers without changing how the game works.</dd>
+            </div>
+            <div class="principles__item">
+              <dt data-i18n="about.item3.label">Vanilla behaviour</dt>
+              <dd data-i18n="about.item3.text">Respects vanilla rules and gamerules instead of replacing them.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <p class="section__lede section__lede--more">
+          <a class="section__more" href="/about.html" data-i18n="about.more">More about hafiy_dev</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--sm ltr" dir="ltr">hafiy_dev</span>
+        <span class="footer__tagline" data-i18n="footer.tagline">Independent Minecraft development.</span>
+      </div>
+
+      <p class="footer__rights" data-i18n="footer.rights">© 2026 hafiy_dev. All rights reserved.</p>
+
+      <p class="footer__links">
+        <a class="footer__link" href="/projects/" data-i18n="nav.projects">Projects</a>
+        <a class="footer__link" href="/about.html" data-i18n="nav.about">About</a>
+        <a class="footer__link" href="/changelog/" data-i18n="nav.changelog">Changelog</a>
+        <a class="footer__link" href="#" data-link="github" data-i18n="footer.github" hidden>GitHub</a>
+        <a class="footer__link" href="#top" data-i18n="footer.top">Back to top</a>
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

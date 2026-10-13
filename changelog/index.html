@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" data-i18n="meta.description.changelog" content="Release notes and updates for hafiy_dev projects, taken from the public release feed of each project.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hafiy.pages.dev/changelog/">
+  <title data-i18n="meta.title.changelog">hafiy_dev: Changelog</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="hafiy_dev: Changelog">
+  <meta property="og:description" content="Release notes and updates for hafiy_dev projects.">
+  <meta property="og:url" content="https://hafiy.pages.dev/changelog/">
+
+  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="/assets/js/changelog.js"></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <a class="brand" href="/">
+        <span class="brand__mark ltr" dir="ltr">hafiy_dev</span>
+        <span class="brand__caret" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="/" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="/projects/" data-i18n="nav.projects">Projects</a>
+        <a class="nav__link" href="/about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="/changelog/" aria-current="page" data-i18n="nav.changelog">Changelog</a>
+      </nav>
+
+      <div class="header__end">
+        <a class="header__github" href="#" data-link="github" data-i18n="nav.github" hidden>GitHub</a>
+
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="nav.langLabel">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang="id" aria-pressed="false">ID</button>
+          <button type="button" class="lang__btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="pagehead" aria-labelledby="page-title">
+      <div class="wrap">
+        <h1 class="pagehead__title" id="page-title" data-i18n="changelog.page.title">Changelog</h1>
+        <p class="pagehead__desc" data-i18n="changelog.page.desc">Release notes for hafiy_dev projects. The data comes from the public release feed of each project and refreshes automatically.</p>
+        <p class="changelog__checked" id="checked-note" data-i18n="changelog.checked" hidden>Source data last checked {date}.</p>
+      </div>
+    </section>
+
+    <section class="section" id="releases" aria-labelledby="releases-title">
+      <div class="wrap">
+
+        <div class="section__head">
+          <h2 class="section__title section__title--label" id="releases-title" data-i18n="changelog.list">RELEASES</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="filters" id="changelog-filters" role="group" aria-label="Filter by project" data-i18n-aria="changelog.filter.label" hidden>
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true" data-i18n="projects.filter.all">All</button>
+        </div>
+
+        <p class="changelog__state" id="state-loading" data-i18n="changelog.loading">Loading release data...</p>
+
+        <div class="notice notice--error" id="state-error" hidden>
+          <p class="notice__text" data-i18n="changelog.error">Release data could not be loaded right now. The problem is usually temporary.</p>
+          <button type="button" class="btn btn--ghost" id="retry" data-i18n="changelog.error.retry">Try again</button>
+        </div>
+
+        <p class="changelog__state" id="state-empty" data-i18n="changelog.empty" hidden>There are no published releases to show.</p>
+
+        <ol class="releases" id="releases-list"></ol>
+
+        <div class="changelog__notes" id="status-notes"></div>
+
+        <p class="changelog__more">
+          <button type="button" class="btn btn--ghost" id="load-more" data-i18n="changelog.more" hidden>Load more</button>
+        </p>
+
+        <div hidden>
+          <span data-i18n="changelog.prerelease">Pre-release</span>
+          <span data-i18n="changelog.view">View release</span>
+          <span data-i18n="changelog.empty.project">No published releases yet for {project}.</span>
+          <span data-i18n="changelog.unconfigured">Release tracking is not configured for {project}.</span>
+          <span data-i18n="changelog.stale">A refresh just failed for {project}. Showing the last verified release data.</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--sm ltr" dir="ltr">hafiy_dev</span>
+        <span class="footer__tagline" data-i18n="footer.tagline">Independent Minecraft development.</span>
+      </div>
+
+      <p class="footer__rights" data-i18n="footer.rights">© 2026 hafiy_dev. All rights reserved.</p>
+
+      <p class="footer__links">
+        <a class="footer__link" href="/projects/" data-i18n="nav.projects">Projects</a>
+        <a class="footer__link" href="/about.html" data-i18n="nav.about">About</a>
+        <a class="footer__link" href="/changelog/" data-i18n="nav.changelog">Changelog</a>
+        <a class="footer__link" href="#" data-link="github" data-i18n="footer.github" hidden>GitHub</a>
+        <a class="footer__link" href="#top" data-i18n="footer.top">Back to top</a>
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
