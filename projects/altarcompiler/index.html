@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" data-i18n="project.altarcompiler.tagline" content="A desktop tool that compiles Skript source into a packaged Paper plugin jar.">
+  <title>hafiy_dev: AltarCompiler</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="canonical" href="https://hafiy.pages.dev/projects/altarcompiler/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="hafiy_dev: AltarCompiler">
+  <meta property="og:description" content="A desktop tool that compiles Skript source into a packaged Paper plugin jar.">
+  <meta property="og:url" content="https://hafiy.pages.dev/projects/altarcompiler/">
+
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <a class="brand" href="/">
+        <span class="brand__mark ltr" dir="ltr">hafiy_dev</span>
+        <span class="brand__caret" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="/" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="/projects" aria-current="page" data-i18n="nav.projects">Projects</a>
+        <a class="nav__link" href="/about.html" data-i18n="nav.about">About</a>
+      </nav>
+
+      <div class="header__end">
+        <a class="header__github" href="#" data-link="github" data-i18n="nav.github" hidden>GitHub</a>
+
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="nav.langLabel">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang__btn" data-lang="id" aria-pressed="false">ID</button>
+          <button type="button" class="lang__btn" data-lang="ar" aria-pressed="false">العربية</button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <div class="wrap">
+        <a class="crumbs__link" href="/projects" data-i18n="nav.projects">Projects</a>
+        <span class="crumbs__sep" aria-hidden="true">/</span>
+        <span class="crumbs__current ltr" dir="ltr">AltarCompiler</span>
+      </div>
+    </nav>
+
+    <section class="detail" aria-labelledby="detail-title">
+      <div class="wrap">
+
+        <p class="eyebrow" data-i18n="projects.kind.altarcompiler">Developer tool</p>
+
+        <h1 class="detail__title ltr" dir="ltr" id="detail-title">AltarCompiler</h1>
+
+        <p class="detail__tagline" data-i18n="project.altarcompiler.tagline">A desktop tool that compiles Skript source into a packaged Paper plugin jar.</p>
+
+        <p class="detail__actions">
+          <a class="btn btn--ghost" href="/projects" data-i18n="projects.all">All projects</a>
+        </p>
+
+        <dl class="detail__facts">
+          <div class="detail__fact">
+            <dt data-i18n="projects.meta.platform">Platform</dt>
+            <dd class="ltr" dir="ltr">Java 21 · JavaFX</dd>
+          </div>
+          <div class="detail__fact">
+            <dt data-i18n="projects.meta.version">Minecraft</dt>
+            <dd class="ltr" dir="ltr">Paper 1.21.1</dd>
+          </div>
+          <div class="detail__fact">
+            <dt data-i18n="detail.meta.java">Java</dt>
+            <dd class="ltr" dir="ltr">Java 21</dd>
+          </div>
+          <div class="detail__fact">
+            <dt data-i18n="detail.meta.version">Version</dt>
+            <dd class="ltr" dir="ltr">1.1.1</dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+    <section class="section" id="overview" aria-labelledby="overview-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title" id="overview-title" data-i18n="detail.overview">Overview</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <span class="section__count" data-i18n="projects.status.released">Released</span>
+        </div>
+        <p class="detail__body" data-i18n="project.altarcompiler.overview">AltarCompiler takes Skript source and runs it through a real compiler pipeline: lexer, parser, AST, semantic analysis, Java source and plugin.yml generation, Maven project generation, compilation, jar packaging, and export. The output is a working Paper plugin rather than an interpretation of one. It is a Windows desktop application, and the tooling it shells out to needs a full JDK 21 plus Maven on the PATH.</p>
+        <p class="detail__note" data-i18n="project.altarcompiler.note">The compiler core is plain Java and runs anywhere; the installer and OS integrations target Windows.</p>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title" id="features-title" data-i18n="detail.features">Features</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+          <span class="section__count" data-i18n="detail.confirmed">Confirmed</span>
+        </div>
+        <ul class="features">
+          <li class="feature" data-i18n="project.altarcompiler.features.0">Lexer, parser, AST and semantic analysis over a supported Skript subset</li>
+          <li class="feature" data-i18n="project.altarcompiler.features.1">Generates Java sources, plugin.yml, and a Maven project</li>
+          <li class="feature" data-i18n="project.altarcompiler.features.2">Compiles and packages the result into a plugin jar</li>
+          <li class="feature" data-i18n="project.altarcompiler.features.3">Packaged as a Windows desktop application with an installer</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="installation" aria-labelledby="installation-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title" id="installation-title" data-i18n="detail.installation">Installation</h2>
+          <span class="section__rule" aria-hidden="true"></span>
+        </div>
+        <ol class="steps">
+          <li class="step" data-i18n="project.altarcompiler.install.0">Install a full JDK 21 (javac must be available, not just a JRE) and Apache Maven 3.9 or newer.</li>
+          <li class="step" data-i18n="project.altarcompiler.install.1">Run the AltarCompiler desktop application on Windows 10 or 11.</li>
+          <li class="step" data-i18n="project.altarcompiler.install.2">Make sure the same JDK and Maven are on PATH, because the app shells out to Maven to build.</li>
+          <li class="step" data-i18n="project.altarcompiler.install.3">Open a Skript project and use Compile to produce the plugin jar.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--sm ltr" dir="ltr">hafiy_dev</span>
+        <span class="footer__tagline" data-i18n="footer.tagline">Independent Minecraft development.</span>
+      </div>
+
+      <p class="footer__rights" data-i18n="footer.rights">© 2026 hafiy_dev. All rights reserved.</p>
+
+      <p class="footer__links">
+        <a class="footer__link" href="/projects" data-i18n="nav.projects">Projects</a>
+        <a class="footer__link" href="/about.html" data-i18n="nav.about">About</a>
+        <a class="footer__link" href="#" data-link="github" data-i18n="footer.github" hidden>GitHub</a>
+        <a class="footer__link" href="#top" data-i18n="footer.top">Back to top</a>
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
